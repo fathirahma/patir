@@ -1,0 +1,49 @@
+<resources>
+    <!-- Tema utama aplikasi -->
+    <style name="Theme.Calculator" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+    </style>
+
+    <!-- Gaya umum untuk tombol kalkulator -->
+    <style name="CalcButton">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">#D3D3D3</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Gaya untuk tombol operator -->
+    <style name="CalcButtonOp" parent="CalcButton">
+        <item name="android:background">#3F51B5</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Gaya untuk tombol Clear -->
+    <style name="CalcButtonClear" parent="CalcButton">
+        <item name="android:background">#FF5722</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Gaya untuk tombol "=" -->
+    <style name="CalcButtonEquals" parent="CalcButton">
+        <item name="android:background">#4CAF50</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="PastelButton">
+        <item name="android:background">#FFDDC1</item>
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="PastelOperatorButton">
+        <item name="android:background">#FFABAB</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>

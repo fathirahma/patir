@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastelBackground"
+    android:id="@+id/main"
+    tools:context=".kalkulator">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_revert"
+        android:contentDescription="Kembali ke menu"
+        android:onClick="onBackPressed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="@color/pastelWhite"
+        android:gravity="end|center_vertical"
+        android:padding="24dp"
+        android:text="0"
+        android:textColor="@color/pastelBlack"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:elevation="8dp"
+        android:shadowColor="#B0BEC5"
+        android:shadowRadius="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack" />
+
+    <TextView
+        android:id="@+id/operatorNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textColor="@color/pastelGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="24dp">
+
+        <Button android:id="@+id/btn7" style="@style/PastelButton" android:text="7" />
+        <Button android:id="@+id/btn8" style="@style/PastelButton" android:text="8" />
+        <Button android:id="@+id/btn9" style="@style/PastelButton" android:text="9" />
+        <Button android:id="@+id/btnDivide" style="@style/PastelOperatorButton" android:text="/" />
+
+        <Button android:id="@+id/btn4" style="@style/PastelButton" android:text="4" />
+        <Button android:id="@+id/btn5" style="@style/PastelButton" android:text="5" />
+        <Button android:id="@+id/btn6" style="@style/PastelButton" android:text="6" />
+        <Button android:id="@+id/btnMultiply" style="@style/PastelOperatorButton" android:text="×" />
+
+        <Button android:id="@+id/btn1" style="@style/PastelButton" android:text="1" />
+        <Button android:id="@+id/btn2" style="@style/PastelButton" android:text="2" />
+        <Button android:id="@+id/btn3" style="@style/PastelButton" android:text="3" />
+        <Button android:id="@+id/btnMinus" style="@style/PastelOperatorButton" android:text="−" />
+
+        <Button android:id="@+id/btn0" style="@style/PastelButton" android:text="0" />
+        <Button android:id="@+id/btnClear" style="@style/PastelOperatorButton" android:text="C" />
+        <Button android:id="@+id/btnEqual" style="@style/PastelOperatorButton" android:text="=" />
+        <Button android:id="@+id/btnPlus" style="@style/PastelOperatorButton" android:text="+" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

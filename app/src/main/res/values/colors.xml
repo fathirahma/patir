@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lilac">#C8A2C8</color>
+    <color name="pastel_purple">#D8BFD8</color>
+    <color name="pastel_pink">#FFC0CB</color>
+    <color name="dark_gray">#333333</color>
+    <color name="light_gray">#A9A9A9</color>
+    <color name="pastel_background">#FCE4EC</color> <!-- Pink Pastel -->
+    <color name="gray">#D3D3D3</color>
+    <color name="blue">#3F51B5</color>
+    <color name="red">#FF5722</color>
+    <color name="green">#4CAF50</color>
+    <color name="pastelBackground">#FFFAF0</color>
+    <color name="pastelWhite">#FFF5EE</color>
+    <color name="pastelBlack">#555555</color>
+    <color name="pastelGray">#888888</color>
+
+
+
+</resources>
